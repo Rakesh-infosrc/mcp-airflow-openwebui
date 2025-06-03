@@ -99,4 +99,33 @@ The Airflow DAGs can interact with the MPC application through API calls. Make s
 -  **🔐 Security – Add OAuth2, API keys, and role-based access.**  
 -  **⚡ Event Triggers – Auto-trigger agents on DAG events.**  
 -  **A📊 Analytics – Dashboard for DAG performance and trends.**  
-- **🤖 AI Troubleshooting – Use LLMs for issue analysis and fixes.**  
+- **🤖 AI Troubleshooting – Use LLMs for issue analysis and fixes.**
+
+- ## Integrate with OpenWebUi
+- 1. install MCPO
+   ```bash
+   pip install mcpo
+   ```
+2.create config.js in mcp folder
+```bash
+{
+  "mcpServers": {
+   "airflow-mcp-server": {
+      "command": "C:\\Users\\RakeshReddyBijjam\\pipx\\venvs\\meltano\\Scripts\\uv.EXE",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\Users\\RakeshReddyBijjam\\Desktop\\claude_sam\\AirTrack\\mcp\\server.py"
+      ]
+    }
+  }
+}
+```
+3. Run the server
+   ```bash
+   uvx mcpo --config config.json --port 8001
+   ```
+  
