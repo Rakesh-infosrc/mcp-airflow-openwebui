@@ -1,0 +1,11 @@
+# Ignore Airflow log and metadata directories
+airflow/logs/
+airflow/tmp/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.db
+.DS_Store
+mcp/AirTrack_demo.mp4 filter=lfs diff=lfs merge=lfs -text

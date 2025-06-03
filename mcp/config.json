@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+   "airflow-mcp-server": {
+      "command": "C:\\Users\\RakeshReddyBijjam\\pipx\\venvs\\meltano\\Scripts\\uv.EXE",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\Users\\RakeshReddyBijjam\\Desktop\\claude_sam\\AirTrack\\mcp\\server.py"
+      ]
+    }
+  }
+}
